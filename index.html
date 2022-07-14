@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>Test</title>
-   </head>
-   <body>
-      <p>
-        var test = {
-            mlem: null,
-            boolean: true,
-        };
-        window.le = null;
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+</head>
+
+<body>
+    <h3>Sharing undef chain</h3>
+    <p>
+        #%#//scriptlet('set-constant', 'chained.property.targetA', 'true');
+        #%#//scriptlet('set-constant', 'chained.property.targetB', '10');
     </p>
-      <script>
-         var test = {
-             mlem: null,
-             boolean: true,
-         };
-        window.le = null;
-      </script>
-   </body>
+    <h4> Code: </h4>
+    <p>
+        setTimeout(() => {
+            window.chained = { property: {} };
+        }, 5000);
+    </p>
+    <script>
+        setTimeout(() => {
+            window.chained = { property: {} };
+        }, 5000);
+    </script>
+</body>
+
 </html>
