@@ -10,17 +10,25 @@
     <h3>Sharing undef chain</h3>
     <p>
         #%#//scriptlet('set-constant', 'chained.property.targetA', 'true');
+    </p>
+    <p>
         #%#//scriptlet('set-constant', 'chained.property.targetB', '10');
     </p>
     <h4> Code: </h4>
     <p>
-        setTimeout(() => {
-            window.chained = { property: {} };
-        }, 5000);
+        window.chained = { property: {} };
     </p>
     <script>
         setTimeout(() => {
             window.chained = { property: {} };
+            console.log('Chain is set');
+
+            const res = document.createElement('p');
+            res.innerText = `
+                window.chained.targetA: ${window.chained.targetA},
+                window.chained.targetB: ${window.chained.targetB},
+            `;
+            document.body.append(res);
         }, 5000);
     </script>
 </body>
