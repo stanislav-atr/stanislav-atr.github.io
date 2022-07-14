@@ -28,11 +28,14 @@
         }, 5000);
 
         setTimeout(() => {
+            const resultH = document.createElement('h4');
+            resultH.innerText = 'Result';
             const res = document.createElement('p');
             res.innerText = `
                 window.chained.targetA: ${window.chained.property.targetA},
                 window.chained.targetB: ${window.chained.property.targetB},
             `;
+            document.body.append(resultH);
             document.body.append(res);
         }, 5500);
     </script>
