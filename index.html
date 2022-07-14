@@ -16,20 +16,25 @@
     </p>
     <h4> Code: </h4>
     <p>
-        window.chained = { property: {} };
+        setTimeout(() => {
+            window.chained = { property: {} };
+            console.log('Chain is set');
+        }, 5000);
     </p>
     <script>
         setTimeout(() => {
             window.chained = { property: {} };
             console.log('Chain is set');
+        }, 5000);
 
+        setTimeout(() => {
             const res = document.createElement('p');
             res.innerText = `
                 window.chained.targetA: ${window.chained.property.targetA},
                 window.chained.targetB: ${window.chained.property.targetB},
             `;
             document.body.append(res);
-        }, 5000);
+        }, 5500);
     </script>
 </body>
 
