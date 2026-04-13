@@ -17,6 +17,7 @@
 	}
 	
 	let darkMode = $state(browser ? getInitialDarkMode() : false);
+	let showAttribution = $state(false);
 
 	// Apply dark mode class to document whenever darkMode changes
 	$effect(() => {
@@ -28,6 +29,14 @@
 
 	function toggleDarkMode() {
 		darkMode = !darkMode;
+	}
+
+	function showAttributionPopover() {
+		showAttribution = true;
+	}
+
+	function hideAttributionPopover() {
+		showAttribution = false;
 	}
 
 	const currentData = $derived(activeTab === 'low' ? lowFodmap : highFodmap);
@@ -84,7 +93,8 @@
 <main class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 transition-colors duration-300">
 	<header class="bg-white dark:bg-slate-800 shadow-sm dark:shadow-slate-700/50 sticky top-0 z-10 transition-colors duration-300">
 		<div class="container mx-auto px-4 py-6">
-			<div class="flex justify-end mb-2">
+			<div class="flex justify-end mb-2 gap-2">
+				<!-- Dark mode toggle -->
 				<button
 					onclick={toggleDarkMode}
 					class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors duration-200"
@@ -100,6 +110,47 @@
 						</svg>
 					{/if}
 				</button>
+
+				<!-- Attribution button -->
+				<div 
+					class="relative"
+					role="group"
+					onmouseenter={showAttributionPopover}
+					onmouseleave={hideAttributionPopover}
+				>
+					<button
+						class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors duration-200"
+						aria-label="Data source attribution"
+						aria-expanded={showAttribution}
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-600 dark:text-slate-300" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+						</svg>
+					</button>
+					{#if showAttribution}
+						<div class="absolute right-0 top-full mt-2 w-72 bg-white dark:bg-slate-800 rounded-lg shadow-lg dark:shadow-slate-700/50 border border-slate-200 dark:border-slate-700 p-4 z-20">
+							<div class="flex items-start gap-3">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+								</svg>
+								<div>
+									<p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+										FODMAP data sourced from
+										<a 
+											href="https://www.ibsdiets.org/fodmap-diet/fodmap-food-list/" 
+											target="_blank" 
+											rel="noopener noreferrer"
+											class="text-emerald-600 dark:text-emerald-400 hover:underline font-medium"
+										>IBS Diets</a>.
+									</p>
+									<p class="text-xs text-slate-500 dark:text-slate-400 mt-2">
+										Thank you for the comprehensive resource!
+									</p>
+								</div>
+							</div>
+						</div>
+					{/if}
+				</div>
 			</div>
 			<h1 class="text-3xl font-bold text-slate-800 dark:text-slate-100 text-center mb-4 transition-colors duration-300">
 				FODMAP Foods Guide
