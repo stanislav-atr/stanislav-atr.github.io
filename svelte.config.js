@@ -1,22 +1,22 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from "@sveltejs/adapter-static";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: undefined,
-			precompress: false,
-			strict: true
-		}),
-		prerender: {
-			entries: ['*']
-		},
-		alias: {
-			$assets: 'src/assets'
-		}
-	}
+  kit: {
+    adapter: adapter({
+      pages: "build",
+      assets: "build",
+      fallback: undefined,
+      precompress: false,
+      strict: true,
+    }),
+    prerender: {
+      entries: ["*"],
+    },
+    alias: {
+      $assets: "src/assets",
+    },
+  },
 };
 
 export default config;

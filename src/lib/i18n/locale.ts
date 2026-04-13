@@ -4,37 +4,36 @@ import type { Locale } from './translations';
 export const defaultLocale: Locale = 'en';
 export const locales: Locale[] = ['en', 'ru', 'kz'];
 
-function createLocaleStore() {
-	const { subscribe, set, update } = writable<Locale>(defaultLocale);
+function getInitialLocale(): Locale {
+    if (typeof window !== 'undefined') {
+        // Read from DOM lang attribute (already set by inline script in app.html)
+        const htmlLang = document.documentElement.lang as Locale;
+        if (htmlLang && locales.includes(htmlLang)) {
+            return htmlLang;
+        }
+    }
+    return defaultLocale;
+}
 
-	return {
-		subscribe,
-		set: (value: Locale) => {
-			if (typeof window !== 'undefined') {
-				localStorage.setItem('locale', value);
-			}
-			set(value);
-		},
-		toggle: () => {
-			update((current) => {
-				const currentIndex = locales.indexOf(current);
-				const nextIndex = (currentIndex + 1) % locales.length;
-				const nextLocale = locales[nextIndex];
-				if (typeof window !== 'undefined') {
-					localStorage.setItem('locale', nextLocale);
-				}
-				return nextLocale;
-			});
-		},
-		init: () => {
-			if (typeof window !== 'undefined') {
-				const stored = localStorage.getItem('locale') as Locale | null;
-				if (stored && locales.includes(stored)) {
-					set(stored);
-				}
-			}
-		}
-	};
+function createLocaleStore() {
+    const { subscribe, set } = writable<Locale>(getInitialLocale());
+
+    return {
+        subscribe,
+        set: (value: Locale) => {
+            if (typeof window !== 'undefined') {
+                localStorage.setItem('locale', value);
+            }
+            set(value);
+        },
+        init: () => {
+            // Re-read in case store was created during SSR
+            const current = getInitialLocale();
+            if (current !== defaultLocale) {
+                set(current);
+            }
+        }
+    };
 }
 
 export const locale = createLocaleStore();

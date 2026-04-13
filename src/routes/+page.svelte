@@ -8,20 +8,23 @@
 	let activeTab: 'low' | 'high' = $state('low');
 	let searchQuery = $state('');
 	
-	// Initialize dark mode with proper SSR handling
+	// Read dark mode synchronously from DOM (already set by inline script in app.html)
 	function getInitialDarkMode(): boolean {
 		if (!browser) return false;
-		const stored = localStorage.getItem('darkMode');
-		if (stored !== null) {
-			return stored === 'true';
-		}
-		return window.matchMedia('(prefers-color-scheme: dark)').matches;
+		return document.documentElement.classList.contains('dark');
 	}
-	
-	let darkMode = $state(browser ? getInitialDarkMode() : false);
+
+	let darkMode = $state(getInitialDarkMode());
 	let showAttribution = $state(false);
 
-	// Apply dark mode class to document whenever darkMode changes
+	// Initialize locale on mount
+	$effect(() => {
+		if (browser) {
+			locale.init();
+		}
+	});
+
+	// Apply dark mode class to document whenever darkMode changes (user toggle only)
 	$effect(() => {
 		if (browser) {
 			document.documentElement.classList.toggle('dark', darkMode);
@@ -29,17 +32,11 @@
 		}
 	});
 
-	// Initialize locale from localStorage
-	$effect(() => {
-		if (browser) {
-			locale.init();
-		}
-	});
-
-	// Update HTML lang attribute when locale changes
+	// Update HTML lang attribute when locale changes and mark page as ready
 	$effect(() => {
 		if (browser) {
 			document.documentElement.lang = $locale;
+			document.documentElement.classList.remove('not-ready');
 		}
 	});
 
