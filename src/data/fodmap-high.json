@@ -1,0 +1,253 @@
+{
+  "title": "High FODMAP food (things to avoid / reduce)",
+  "categories": [
+    {
+      "name": "Vegetables and Legumes",
+      "foods": [
+        { "name": "Garlic", "notes": "Avoid entirely if possible. Includes garlic salt, garlic powder" },
+        { "name": "Onions", "notes": "Avoid entirely if possible. Includes onion powder, small pickled onions" },
+        { "name": "Artichoke", "notes": "Including Jerusalem artichoke" },
+        { "name": "Asparagus" },
+        { "name": "Baked beans" },
+        { "name": "Beetroot, fresh" },
+        { "name": "Black eyed peas" },
+        { "name": "Broad beans" },
+        { "name": "Butter beans" },
+        { "name": "Cassava" },
+        { "name": "Cauliflower", "threshold": "75g", "notes": "High FODMAP over 75g" },
+        { "name": "Celery", "threshold": "5cm stalk", "notes": "High FODMAP greater than 5cm of stalk" },
+        { "name": "Choko" },
+        { "name": "Falafel" },
+        { "name": "Haricot beans" },
+        { "name": "Kidney beans" },
+        { "name": "Kelp / Kombu" },
+        { "name": "Lima beans" },
+        { "name": "Leek bulb" },
+        { "name": "Mange Tout" },
+        { "name": "Mixed vegetables" },
+        { "name": "Mung beans" },
+        { "name": "Mushrooms" },
+        { "name": "Peas, sugar snap" },
+        { "name": "Pickled vegetables" },
+        { "name": "Red kidney beans", "threshold": "85g", "notes": "High FODMAP over 85g" },
+        { "name": "Savoy Cabbage", "threshold": "1/2 cup", "notes": "High FODMAP over 1/2 cup" },
+        { "name": "Soy beans / soya beans" },
+        { "name": "Split peas" },
+        { "name": "Scallions / spring onions", "notes": "Bulb / white part only" },
+        { "name": "Shallots" },
+        { "name": "Taro" }
+      ]
+    },
+    {
+      "name": "Fruit",
+      "notes": "Fruits can contain high fructose",
+      "foods": [
+        { "name": "Apples", "notes": "Including Pink Lady and Granny Smith" },
+        { "name": "Apricots" },
+        { "name": "Avocado", "threshold": "1/2 cup", "notes": "High FODMAP over 1/2 cup" },
+        { "name": "Bananas, ripe" },
+        { "name": "Blackberries" },
+        { "name": "Blackcurrants" },
+        { "name": "Boysenberry" },
+        { "name": "Cherries" },
+        { "name": "Currants" },
+        { "name": "Custard apple" },
+        { "name": "Feijoa" },
+        { "name": "Figs" },
+        { "name": "Goji berries" },
+        { "name": "Grapefruit", "threshold": "80g", "notes": "High FODMAP over 80g" },
+        { "name": "Guava, unripe" },
+        { "name": "Juniper Berry, dried" },
+        { "name": "Lychee" },
+        { "name": "Mango" },
+        { "name": "Nectarines", "threshold": "1/2 nectarine", "notes": "High FODMAP over 1/2 a nectarine" },
+        { "name": "Paw paw, dried" },
+        { "name": "Peaches" },
+        { "name": "Pears" },
+        { "name": "Persimmon" },
+        { "name": "Pineapple, dried" },
+        { "name": "Plums" },
+        { "name": "Pomegranate" },
+        { "name": "Prunes" },
+        { "name": "Raisins", "threshold": "1 tbsp / 13g", "notes": "High FODMAP over 1 tbsp / 13g" },
+        { "name": "Sea buckthorns" },
+        { "name": "Sultanas" },
+        { "name": "Tamarillo" },
+        { "name": "Tinned fruit in apple / pear juice" },
+        { "name": "Watermelon" }
+      ]
+    },
+    {
+      "name": "Meats, Poultry and Meat Substitutes",
+      "foods": [
+        { "name": "Chorizo", "notes": "If garlic added" },
+        { "name": "Sausages", "notes": "Check ingredients" }
+      ]
+    },
+    {
+      "name": "Cereals, Grains, Breads, Biscuits/Cookies, Pasta, Nuts and Cakes",
+      "foods": [
+        {
+          "name": "Wheat-containing products",
+          "notes": "Be sure to check labels",
+          "variants": [
+            { "name": "Biscuits / cookies", "notes": "Including chocolate chip cookies" },
+            { "name": "Bread, wheat", "threshold": "1 slice", "notes": "High FODMAP over 1 slice" },
+            { "name": "Breadcrumbs" },
+            { "name": "Cakes" },
+            { "name": "Cereal bar, wheat based" },
+            { "name": "Croissants" },
+            { "name": "Crumpets" },
+            { "name": "Egg noodles" },
+            { "name": "Muffins" },
+            { "name": "Pasta, wheat", "threshold": "1/2 cup cooked", "notes": "High FODMAP over 1/2 cup cooked" },
+            { "name": "Udon noodles" },
+            { "name": "Wheat bran" },
+            { "name": "Wheat cereals" },
+            { "name": "Wheat flour" },
+            { "name": "Wheat germ" },
+            { "name": "Wheat noodles" },
+            { "name": "Wheat rolls" }
+          ]
+        },
+        { "name": "Almond meal" },
+        { "name": "Amaranth flour" },
+        { "name": "Barley", "notes": "Including flour" },
+        { "name": "Bran cereals" },
+        {
+          "name": "Bread (non-wheat varieties to avoid)",
+          "variants": [
+            { "name": "Granary bread" },
+            { "name": "Multigrain bread" },
+            { "name": "Naan" },
+            { "name": "Oatmeal bread" },
+            { "name": "Pumpernickel bread" },
+            { "name": "Roti" },
+            { "name": "Sourdough with kamut" }
+          ]
+        },
+        { "name": "Cashews" },
+        { "name": "Chestnut flour" },
+        { "name": "Cous cous" },
+        { "name": "Einkorn flour" },
+        { "name": "Freekeh" },
+        { "name": "Gnocchi" },
+        { "name": "Granola bar" },
+        { "name": "Muesli cereal" },
+        { "name": "Muesli bar" },
+        { "name": "Pistachios" },
+        { "name": "Rye" },
+        { "name": "Rye crispbread" },
+        { "name": "Semolina" },
+        { "name": "Spelt flour" }
+      ]
+    },
+    {
+      "name": "Condiments, Dips, Sweets, Sweeteners and Spreads",
+      "foods": [
+        { "name": "Agave" },
+        { "name": "Caviar dip" },
+        { "name": "Fructose" },
+        { "name": "Fruit bar" },
+        { "name": "Gravy", "notes": "If it contains onion" },
+        { "name": "High fructose corn syrup (HFCS)" },
+        { "name": "Hummus / houmous" },
+        { "name": "Honey" },
+        { "name": "Jam, mixed berries" },
+        { "name": "Jam, strawberry", "notes": "If contains HFCS" },
+        { "name": "Molasses" },
+        { "name": "Pesto sauce" },
+        { "name": "Quince paste" },
+        { "name": "Relish / vegetable pickle" },
+        { "name": "Stock cubes" },
+        { "name": "Sugar free sweets containing polyols", "notes": "Usually ingredients ending in -ol, or isomalt" },
+        {
+          "name": "Sweeteners (polyols to avoid)",
+          "variants": [
+            { "name": "Inulin" },
+            { "name": "Isomalt", "notes": "E953 / 953" },
+            { "name": "Lactitol", "notes": "E966 / 966" },
+            { "name": "Maltitol", "notes": "E965 / 965" },
+            { "name": "Mannitol", "notes": "E241 / 421" },
+            { "name": "Sorbitol", "notes": "E420 / 420" },
+            { "name": "Xylitol", "notes": "E967 / 967" }
+          ]
+        },
+        { "name": "Tzatziki dip" },
+        { "name": "Wasabi" }
+      ]
+    },
+    {
+      "name": "Prebiotic Foods",
+      "notes": "May be hidden in yoghurts, snack bars, etc.",
+      "foods": [
+        { "name": "FOS (fructooligosaccharides)" },
+        { "name": "Inulin" },
+        { "name": "Oligofructose" }
+      ]
+    },
+    {
+      "name": "Drinks and Protein Powders",
+      "foods": [
+        { "name": "Beer", "threshold": "1 bottle", "notes": "High FODMAP if drinking more than one bottle" },
+        { "name": "Cordial, apple and raspberry", "notes": "With 50–100% real juice" },
+        { "name": "Cordial, orange", "notes": "With 25–50% real juice" },
+        { "name": "Fruit and herbal teas with apple added" },
+        { "name": "Fruit juices", "notes": "In large quantities" },
+        { "name": "Fruit juices made of apple, pear, or mango" },
+        { "name": "Kombucha" },
+        { "name": "Malted chocolate flavored drink" },
+        { "name": "Meal replacement drinks", "notes": "Containing milk-based products e.g. Ensure, Slim Fast" },
+        { "name": "Orange juice", "threshold": "100ml", "notes": "High FODMAP over 100ml" },
+        { "name": "Quinoa milk" },
+        { "name": "Rum" },
+        { "name": "Sodas containing High Fructose Corn Syrup (HFCS)" },
+        { "name": "Sports drinks" },
+        {
+          "name": "Tea (high FODMAP varieties)",
+          "variants": [
+            { "name": "Black tea with added soy milk" },
+            { "name": "Chai tea, strong" },
+            { "name": "Dandelion tea, strong" },
+            { "name": "Fennel tea" },
+            { "name": "Chamomile tea" },
+            { "name": "Herbal tea, strong" },
+            { "name": "Oolong tea" }
+          ]
+        },
+        { "name": "Wine", "threshold": "1 glass", "notes": "High FODMAP if drinking more than one glass" },
+        { "name": "Whey protein concentrate", "notes": "Unless lactose free" },
+        { "name": "Whey protein, hydrolyzed", "notes": "Unless lactose free" }
+      ]
+    },
+    {
+      "name": "Dairy Foods",
+      "foods": [
+        { "name": "Buttermilk" },
+        { "name": "Cheese, ricotta" },
+        { "name": "Cream" },
+        { "name": "Custard" },
+        { "name": "Gelato" },
+        { "name": "Ice cream" },
+        { "name": "Kefir" },
+        {
+          "name": "Milk",
+          "variants": [
+            { "name": "Cow milk" },
+            { "name": "Goat milk" },
+            { "name": "Evaporated milk" },
+            { "name": "Sheep's milk" }
+          ]
+        },
+        { "name": "Sour cream", "threshold": "2 tbsp", "notes": "High FODMAP over 2 tbsp" },
+        { "name": "Yoghurt" }
+      ]
+    },
+    {
+      "name": "Cooking Ingredients",
+      "foods": [
+        { "name": "Carob powder / carob flour" }
+      ]
+    }
+  ]
+}

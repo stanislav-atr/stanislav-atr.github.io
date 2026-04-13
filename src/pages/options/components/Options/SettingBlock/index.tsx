@@ -1,1 +1,0 @@
-export { SettingBlock } from './SettingBlock';

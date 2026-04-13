@@ -1,0 +1,522 @@
+{
+  "title": "Low FODMAP food (good to eat food)",
+  "notes": "Where quantities are given, these are the maximum amounts allowed",
+  "categories": [
+    {
+      "name": "Vegetables and Legumes",
+      "foods": [
+        { "name": "Alfalfa" },
+        { "name": "Bamboo shoots" },
+        { "name": "Bean sprouts" },
+        { "name": "Beetroot, canned and pickled" },
+        { "name": "Black beans", "max_amount": "1/4 cup / 45g" },
+        { "name": "Bok choy / pak choi" },
+        { "name": "Broccoli, heads only", "max_amount": "3/4 cup" },
+        { "name": "Broccoli, stalks only", "max_amount": "1/3 cup" },
+        { "name": "Broccolini, heads only", "max_amount": "1/4 cup" },
+        { "name": "Broccolini, stalks only", "max_amount": "3/4 cup" },
+        { "name": "Brussels sprouts", "max_amount": "2 sprouts" },
+        { "name": "Butternut squash", "max_amount": "1/4 cup" },
+        { "name": "Cabbage, common and red", "max_amount": "3/4 cup" },
+        { "name": "Callaloo" },
+        { "name": "Carrots" },
+        { "name": "Celeriac" },
+        { "name": "Celery", "max_amount": "less than 5cm of stalk" },
+        { "name": "Chicory leaves" },
+        { "name": "Chick peas", "max_amount": "1/4 cup" },
+        { "name": "Chilli", "notes": "If tolerable" },
+        { "name": "Chinese cabbage / wombok" },
+        { "name": "Chives" },
+        { "name": "Cho cho", "max_amount": "1/2 cup diced" },
+        { "name": "Choy sum" },
+        { "name": "Collard greens" },
+        { "name": "Corn / sweet corn", "max_amount": "1/2 cob", "notes": "If tolerable and only in small amounts" },
+        { "name": "Courgette", "max_amount": "65g" },
+        { "name": "Cucumber" },
+        { "name": "Eggplant / aubergine", "max_amount": "1 cup" },
+        { "name": "Fennel, bulb", "max_amount": "75g" },
+        { "name": "Fennel, leaves", "max_amount": "15g" },
+        { "name": "Fermented cabbage (e.g. sauerkraut)", "max_amount": "1/2 cup" },
+        { "name": "Green beans" },
+        { "name": "Green pepper / green bell pepper / green capsicum", "max_amount": "1/2 cup" },
+        { "name": "Ginger" },
+        { "name": "Kale" },
+        { "name": "Karela" },
+        { "name": "Kumara / sweet potato, purple and white", "max_amount": "75g" },
+        { "name": "Leek leaves" },
+        { "name": "Lentils", "notes": "In small amounts" },
+        {
+          "name": "Lettuce",
+          "variants": [
+            { "name": "Butter lettuce" },
+            { "name": "Iceberg lettuce" },
+            { "name": "Radicchio lettuce" },
+            { "name": "Red coral lettuce" },
+            { "name": "Rocket lettuce" },
+            { "name": "Romaine / Cos lettuce" }
+          ]
+        },
+        { "name": "Marrow" },
+        { "name": "Okra" },
+        { "name": "Olives" },
+        { "name": "Parsnip" },
+        { "name": "Peas, snow", "max_amount": "5 pods" },
+        { "name": "Pickled gherkins" },
+        { "name": "Pickled onions, large" },
+        { "name": "Potato" },
+        { "name": "Pumpkin", "max_amount": "63g" },
+        { "name": "Pumpkin, canned", "max_amount": "1/4 cup / 2.2 oz" },
+        { "name": "Radish" },
+        { "name": "Red peppers / red bell pepper / red capsicum" },
+        { "name": "Scallions / spring onions", "notes": "Green part only" },
+        { "name": "Seaweed / nori" },
+        { "name": "Silverbeet / chard" },
+        { "name": "Spaghetti squash" },
+        { "name": "Spinach, baby" },
+        { "name": "Spinach, english" },
+        { "name": "Squash", "max_amount": "63g" },
+        { "name": "Sun-dried tomatoes", "max_amount": "4 pieces" },
+        { "name": "Swede" },
+        { "name": "Swiss chard" },
+        { "name": "Sweet potato", "max_amount": "1/2 cup" },
+        {
+          "name": "Tomato",
+          "variants": [
+            { "name": "Tomato, canned", "max_amount": "3/5 cup" },
+            { "name": "Tomato, common", "max_amount": "65g" },
+            { "name": "Tomato, cherry", "max_amount": "5 cherries" },
+            { "name": "Tomato, roma" },
+            { "name": "Tomato juice", "max_amount": "1/2 glass" },
+            { "name": "Tomato paste / concentrate", "max_amount": "2 tablespoons" }
+          ]
+        },
+        { "name": "Tomatillo, fresh", "max_amount": "1 cup" },
+        { "name": "Tomatillos, canned", "max_amount": "75g" },
+        { "name": "Turnip", "max_amount": "1/2 turnip" },
+        { "name": "Water chestnuts" },
+        { "name": "Water spinach" },
+        { "name": "Yam" },
+        { "name": "Zucchini", "max_amount": "65g" }
+      ]
+    },
+    {
+      "name": "Fruit",
+      "foods": [
+        { "name": "Ackee" },
+        { "name": "Applesauce", "max_amount": "3/4 tsp" },
+        { "name": "Bananas, unripe", "max_amount": "1 medium" },
+        { "name": "Bilberries" },
+        { "name": "Blueberries", "max_amount": "1 cup" },
+        { "name": "Breadfruit" },
+        { "name": "Carambola" },
+        { "name": "Cantaloupe", "max_amount": "3/4 cup" },
+        { "name": "Cranberry", "max_amount": "1 tbsp" },
+        { "name": "Clementine" },
+        { "name": "Coconut, cream", "max_amount": "1/4 cup" },
+        { "name": "Coconut, flesh", "max_amount": "2/3 cup" },
+        { "name": "Coconut, sugar", "max_amount": "1 tsp" },
+        { "name": "Cranberry juice", "max_amount": "3/4 glass" },
+        { "name": "Dates", "max_amount": "5" },
+        { "name": "Dragon fruit" },
+        { "name": "Lingonberries" },
+        { "name": "Grapes, red and white", "max_amount": "10g" },
+        { "name": "Guava, ripe" },
+        { "name": "Honeydew and Galia melons", "max_amount": "1/2 cup" },
+        { "name": "Jackfruit", "max_amount": "1/3 cup" },
+        { "name": "Kiwifruit", "max_amount": "2 small" },
+        { "name": "Lemon", "notes": "Including lemon juice" },
+        { "name": "Lime", "notes": "Including lime juice" },
+        { "name": "Mandarin" },
+        { "name": "Orange" },
+        { "name": "Passion fruit" },
+        { "name": "Paw paw" },
+        { "name": "Papaya" },
+        { "name": "Pineapple" },
+        { "name": "Plantain, peeled" },
+        { "name": "Prickly pear / nopales" },
+        { "name": "Raspberry", "max_amount": "1/3 cup" },
+        { "name": "Rhubarb" },
+        { "name": "Strawberry", "max_amount": "65g / about 5 medium strawberries" },
+        { "name": "Tamarind" },
+        { "name": "Tangelo" }
+      ]
+    },
+    {
+      "name": "Meats, Poultry and Meat Substitutes",
+      "foods": [
+        { "name": "Beef" },
+        { "name": "Chicken" },
+        { "name": "Chorizo", "notes": "Without garlic added" },
+        { "name": "Foie gras" },
+        { "name": "Kangaroo" },
+        { "name": "Lamb" },
+        { "name": "Pork" },
+        { "name": "Prosciutto" },
+        { "name": "Quorn, mince" },
+        { "name": "Turkey" },
+        { "name": "Cold cuts / deli meat", "notes": "Such as ham and turkey breast" },
+        { "name": "Processed meat", "notes": "Check ingredients" }
+      ]
+    },
+    {
+      "name": "Fish and Seafood",
+      "foods": [
+        { "name": "Canned tuna" },
+        {
+          "name": "Fresh fish",
+          "variants": [
+            { "name": "Cod" },
+            { "name": "Haddock" },
+            { "name": "Plaice" },
+            { "name": "Salmon" },
+            { "name": "Trout" },
+            { "name": "Tuna" }
+          ]
+        },
+        {
+          "name": "Seafood",
+          "notes": "Ensuring nothing else is added",
+          "variants": [
+            { "name": "Crab" },
+            { "name": "Lobster" },
+            { "name": "Mussels" },
+            { "name": "Oysters" },
+            { "name": "Prawns" },
+            { "name": "Shrimp" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cereals, Grains, Breads, Biscuits, Pasta, Nuts and Cakes",
+      "foods": [
+        {
+          "name": "Wheat free / gluten free bread",
+          "variants": [
+            { "name": "Corn bread" },
+            { "name": "Rice bread" },
+            { "name": "Spelt sourdough bread" },
+            { "name": "Potato flour bread" }
+          ]
+        },
+        { "name": "Bread, wheat", "max_amount": "1 slice" },
+        { "name": "Wheat free or gluten free pasta" },
+        { "name": "Almonds", "max_amount": "10 almonds" },
+        { "name": "Biscuit, cream cracker", "max_amount": "4 crackers" },
+        { "name": "Biscuit, oatcakes", "max_amount": "4 cakes" },
+        { "name": "Biscuit, savory", "max_amount": "2 biscuits" },
+        { "name": "Biscuit, shortbread", "max_amount": "1 biscuit" },
+        { "name": "Biscuit, sweet, plain", "max_amount": "2 biscuits" },
+        { "name": "Biscuit, wholegrain oat cereal biscuit", "max_amount": "2 biscuits" },
+        { "name": "Brazil nuts", "max_amount": "10 nuts" },
+        { "name": "Bulgur / bourghal", "max_amount": "1/4 cup cooked / 44g" },
+        { "name": "Buckwheat" },
+        { "name": "Buckwheat flour" },
+        { "name": "Buckwheat noodles" },
+        { "name": "Brown rice / whole grain rice" },
+        { "name": "Cassava flour" },
+        { "name": "Chestnuts" },
+        { "name": "Chips, plain / potato crisps, plain" },
+        { "name": "Cornflour / maize" },
+        { "name": "Crispbread" },
+        { "name": "Corncakes" },
+        { "name": "Cornflakes", "max_amount": "1/2 cup" },
+        { "name": "Cornflakes, gluten free" },
+        { "name": "Corn, creamed and canned", "max_amount": "1/3 cup" },
+        { "name": "Corn tortillas", "max_amount": "3 tortillas" },
+        { "name": "Crackers, plain" },
+        { "name": "Flax seeds / linseeds", "max_amount": "1 tbsp" },
+        { "name": "Flaxseed oil" },
+        { "name": "Hazelnuts", "max_amount": "24 hazelnuts" },
+        {
+          "name": "Kellogg's cereals (US)",
+          "variants": [
+            { "name": "Corn Flakes" },
+            { "name": "Crispix" },
+            { "name": "Frosted Flakes" },
+            { "name": "Frosted Krispies" },
+            { "name": "Rice Krispies" }
+          ]
+        },
+        { "name": "Macadamia nuts", "max_amount": "15 nuts" },
+        { "name": "Millet" },
+        { "name": "Mixed nuts" },
+        { "name": "Oatmeal", "max_amount": "1/2 cup" },
+        { "name": "Oats" },
+        { "name": "Oatcakes" },
+        { "name": "Pastry, filo / phyllo", "max_amount": "1 sheet" },
+        { "name": "Pastry, puff", "max_amount": "1/4 sheet" },
+        { "name": "Peanuts" },
+        { "name": "Pecans", "max_amount": "15 halves" },
+        { "name": "Pine nuts" },
+        { "name": "Polenta" },
+        { "name": "Popcorn" },
+        { "name": "Porridge and oat based cereals" },
+        { "name": "Potato flour" },
+        { "name": "Pretzels" },
+        { "name": "Quinoa" },
+        { "name": "Pasta, wheat", "max_amount": "1/2 cup cooked" },
+        {
+          "name": "Rice",
+          "variants": [
+            { "name": "Basmati rice" },
+            { "name": "Bomba rice" },
+            { "name": "Brown rice" },
+            { "name": "Rice noodles" },
+            { "name": "White rice" },
+            { "name": "Wild rice", "max_amount": "1 cup" }
+          ]
+        },
+        { "name": "Rice bran" },
+        { "name": "Rice cakes" },
+        { "name": "Rice crackers" },
+        { "name": "Rice flakes" },
+        { "name": "Rice flour" },
+        {
+          "name": "Seeds",
+          "variants": [
+            { "name": "Chia seeds" },
+            { "name": "Dill seeds" },
+            { "name": "Egusi seeds" },
+            { "name": "Hemp seeds" },
+            { "name": "Poppy seeds" },
+            { "name": "Pumpkin seeds" },
+            { "name": "Sesame seeds" },
+            { "name": "Sunflower seeds" }
+          ]
+        },
+        { "name": "Starch, maize, potato and tapioca" },
+        { "name": "Sorghum" },
+        { "name": "Tortilla chips / corn chips" },
+        { "name": "Walnuts", "max_amount": "15 nut halves" }
+      ]
+    },
+    {
+      "name": "Condiments, Dips, Sweets, Sweeteners and Spreads",
+      "foods": [
+        { "name": "Aspartame" },
+        { "name": "Acesulfame K" },
+        { "name": "Almond butter" },
+        { "name": "Barbecue sauce", "notes": "Check label carefully" },
+        { "name": "Capers in vinegar" },
+        { "name": "Capers, salted" },
+        {
+          "name": "Chocolate",
+          "variants": [
+            { "name": "Dark chocolate", "max_amount": "5 squares" },
+            { "name": "Milk chocolate", "max_amount": "4 squares" },
+            { "name": "White chocolate", "max_amount": "3 squares" }
+          ]
+        },
+        { "name": "Chutney", "max_amount": "1 tablespoon" },
+        { "name": "Dijon mustard" },
+        { "name": "Erythritol", "notes": "E968 / 968" },
+        { "name": "Fish sauce" },
+        { "name": "Golden syrup", "max_amount": "1 tsp" },
+        { "name": "Glucose" },
+        { "name": "Glycerol", "notes": "E422 / 422" },
+        { "name": "Jam / jelly, strawberry" },
+        { "name": "Jam / jelly, raspberry", "max_amount": "2 tbsp" },
+        { "name": "Ketchup (USA)", "max_amount": "1 sachet" },
+        { "name": "Maple syrup" },
+        { "name": "Marmalade" },
+        { "name": "Marmite" },
+        { "name": "Mayonnaise", "notes": "Ensure no garlic or onion in ingredients" },
+        { "name": "Miso paste" },
+        { "name": "Mustard" },
+        { "name": "Oyster sauce" },
+        { "name": "Pesto sauce", "max_amount": "less than 1 tbsp" },
+        { "name": "Peanut butter" },
+        { "name": "Rice malt syrup" },
+        { "name": "Saccharine" },
+        { "name": "Shrimp paste" },
+        { "name": "Soy sauce" },
+        { "name": "Sriracha hot chilli sauce", "max_amount": "1 tsp" },
+        { "name": "Stevia" },
+        { "name": "Sweet and sour sauce" },
+        { "name": "Sucralose" },
+        { "name": "Sugar (sucrose)" },
+        { "name": "Tahini paste" },
+        { "name": "Tamari sauce" },
+        { "name": "Tamarind paste" },
+        { "name": "Tomato sauce (outside USA)", "max_amount": "2 sachets / 13g" },
+        { "name": "Vegemite" },
+        {
+          "name": "Vinegars",
+          "variants": [
+            { "name": "Apple cider vinegar", "max_amount": "2 tbsp" },
+            { "name": "Balsamic vinegar", "max_amount": "2 tbsp" },
+            { "name": "Rice wine vinegar" }
+          ]
+        },
+        { "name": "Worcestershire sauce", "notes": "Contains very low amounts of onion and garlic, making it low FODMAP overall" }
+      ]
+    },
+    {
+      "name": "Drinks and Protein Powders",
+      "foods": [
+        {
+          "name": "Alcohol",
+          "notes": "Alcohol is an irritant to the gut — limited intake advised",
+          "variants": [
+            { "name": "Beer", "max_amount": "1 drink" },
+            { "name": "Clear spirits (e.g. Vodka)" },
+            { "name": "Gin" },
+            { "name": "Whiskey" },
+            { "name": "Wine", "max_amount": "1 drink" }
+          ]
+        },
+        {
+          "name": "Coffee",
+          "variants": [
+            { "name": "Espresso, regular or decaffeinated, black" },
+            { "name": "Espresso, regular or decaffeinated, with lactose free milk", "max_amount": "250ml milk" },
+            { "name": "Instant coffee, regular or decaffeinated, black" },
+            { "name": "Instant coffee, regular or decaffeinated, with lactose free milk", "max_amount": "250ml milk" }
+          ]
+        },
+        { "name": "Coconut milk", "max_amount": "125ml" },
+        { "name": "Coconut water", "max_amount": "100ml" },
+        { "name": "Drinking chocolate powder" },
+        { "name": "Fruit juice", "max_amount": "125ml", "notes": "Safe fruits only" },
+        { "name": "Kvass" },
+        { "name": "Lemonade", "notes": "In low quantities" },
+        {
+          "name": "Protein powders",
+          "variants": [
+            { "name": "Egg protein" },
+            { "name": "Rice protein" },
+            { "name": "Sacha Inchi protein" },
+            { "name": "Whey protein isolate" }
+          ]
+        },
+        { "name": "Soya milk made with soy protein", "notes": "Not soy beans" },
+        { "name": "Sugar-free fizzy drinks / soft drinks", "notes": "Such as diet cola. In low quantities — aspartame and acesulfame K can be irritants" },
+        { "name": "Sugar-based fizzy drinks", "notes": "Not containing HFCS. Limit intake as these can cause gut irritation" },
+        {
+          "name": "Tea",
+          "variants": [
+            { "name": "Black tea, weak" },
+            { "name": "Chai tea, weak" },
+            { "name": "Fruit and herbal tea, weak", "notes": "Ensure no apple added" },
+            { "name": "Green tea" },
+            { "name": "Peppermint tea" },
+            { "name": "White tea" }
+          ]
+        },
+        { "name": "Water" }
+      ]
+    },
+    {
+      "name": "Dairy Foods and Eggs",
+      "foods": [
+        { "name": "Butter" },
+        {
+          "name": "Cheese",
+          "variants": [
+            { "name": "American cheese", "max_amount": "16g" },
+            { "name": "Brie" },
+            { "name": "Camembert" },
+            { "name": "Cheddar" },
+            { "name": "Cottage cheese", "max_amount": "2 tablespoons" },
+            { "name": "Cream cheese", "max_amount": "2 tbsp" },
+            { "name": "Feta" },
+            { "name": "Goat / chevre" },
+            { "name": "Haloumi", "max_amount": "40g" },
+            { "name": "Monterey Jack" },
+            { "name": "Mozzarella" },
+            { "name": "Paneer", "max_amount": "2 tbsp" },
+            { "name": "Parmesan" },
+            { "name": "Ricotta", "max_amount": "2 tablespoons" },
+            { "name": "Swiss" }
+          ]
+        },
+        { "name": "Dairy free chocolate pudding" },
+        { "name": "Eggs" },
+        { "name": "Margarine" },
+        {
+          "name": "Milk (low FODMAP alternatives)",
+          "variants": [
+            { "name": "Almond milk" },
+            { "name": "Hemp milk", "max_amount": "125ml" },
+            { "name": "Lactose free milk" },
+            { "name": "Macadamia milk" },
+            { "name": "Oat milk", "max_amount": "30ml", "notes": "Enough for cereal" },
+            { "name": "Rice milk", "max_amount": "200ml per sitting" }
+          ]
+        },
+        { "name": "Sorbet" },
+        { "name": "Soy protein", "notes": "Avoid soya beans" },
+        { "name": "Tempeh" },
+        { "name": "Tofu", "notes": "Drained and firm varieties" },
+        { "name": "Whipped cream" },
+        {
+          "name": "Yoghurt",
+          "variants": [
+            { "name": "Coconut yoghurt" },
+            { "name": "Greek yoghurt", "max_amount": "23g" },
+            { "name": "Lactose free yoghurt" },
+            { "name": "Goats yoghurt" },
+            { "name": "Soy yoghurt", "max_amount": "38g" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cooking Ingredients, Herbs and Spices",
+      "foods": [
+        {
+          "name": "Herbs",
+          "variants": [
+            { "name": "Basil" }, { "name": "Bay leaves" }, { "name": "Cilantro" },
+            { "name": "Coriander" }, { "name": "Curry leaves" }, { "name": "Fenugreek" },
+            { "name": "Gotukala" }, { "name": "Lemongrass" }, { "name": "Mint" },
+            { "name": "Oregano" }, { "name": "Pandan" }, { "name": "Parsley" },
+            { "name": "Rampa" }, { "name": "Rosemary" }, { "name": "Sage" },
+            { "name": "Tarragon" }, { "name": "Thyme" }
+          ]
+        },
+        {
+          "name": "Spices",
+          "variants": [
+            { "name": "All spice" }, { "name": "Black pepper" }, { "name": "Cardamon" },
+            { "name": "Chili powder", "notes": "Check ingredients — sometimes has garlic added" },
+            { "name": "Chipotle chili powder" }, { "name": "Cinnamon" }, { "name": "Cloves" },
+            { "name": "Cumin" }, { "name": "Curry powder" }, { "name": "Fennel seeds" },
+            { "name": "Five spice" }, { "name": "Goraka" }, { "name": "Mustard seeds" },
+            { "name": "Nutmeg" }, { "name": "Paprika" }, { "name": "Saffron" },
+            { "name": "Star anise" }, { "name": "Turmeric" }
+          ]
+        },
+        {
+          "name": "Oils",
+          "variants": [
+            { "name": "Avocado oil" }, { "name": "Canola oil" }, { "name": "Coconut oil" },
+            { "name": "Olive oil" }, { "name": "Peanut oil" }, { "name": "Rice bran oil" },
+            { "name": "Sesame oil" }, { "name": "Soybean oil" }, { "name": "Sunflower oil" },
+            { "name": "Vegetable oil" }
+          ]
+        },
+        { "name": "Garlic infused oil", "notes": "See recipe — the infusion process removes FODMAPs" },
+        { "name": "Onion infused oil", "notes": "See recipe — the infusion process removes FODMAPs" },
+        { "name": "Acai powder" },
+        { "name": "Asafoetida powder", "notes": "Great onion substitute" },
+        { "name": "Baking powder" },
+        { "name": "Baking soda" },
+        { "name": "Cacao powder" },
+        { "name": "Cocoa powder" },
+        { "name": "Cream", "max_amount": "2 tablespoons" },
+        { "name": "Gelatine" },
+        { "name": "Ghee, clarified butter", "max_amount": "1 tbsp" },
+        { "name": "Icing sugar" },
+        { "name": "Lard" },
+        { "name": "Maca powder", "max_amount": "1 tsp" },
+        { "name": "Mango powder", "max_amount": "1 tsp" },
+        { "name": "Matcha powder", "max_amount": "1 tsp" },
+        { "name": "Nutritional yeast" },
+        { "name": "Salt" },
+        { "name": "Tahini, hulled", "max_amount": "30g" }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,0 @@
-export { NotificationHead } from './NotificationHead';

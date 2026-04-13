@@ -1,1 +1,0 @@
-export { SettingHeader } from './SettingHeader';
