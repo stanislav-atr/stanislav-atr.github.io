@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <rect fill="#00AFCA" width="600" height="300"/>
+  <circle fill="#FEC50C" cx="300" cy="150" r="60"/>
+  <g fill="#FEC50C">
+    <path d="M300,60 l5,25 l-5,20 l-5,-20 z"/>
+    <path d="M300,240 l5,-25 l-5,-20 l-5,20 z"/>
+    <path d="M210,150 l25,5 l20,-5 l-20,-5 z"/>
+    <path d="M390,150 l-25,5 l-20,-5 l20,-5 z"/>
+    <path d="M236,86 l20,15 l10,-20 l-5,22 z"/>
+    <path d="M364,214 l-20,-15 l-10,20 l5,-22 z"/>
+    <path d="M236,214 l15,-20 l-20,-10 l22,5 z"/>
+    <path d="M364,86 l-15,20 l20,10 l-22,-5 z"/>
+  </g>
+  <rect fill="#FEC50C" x="30" y="30" width="20" height="240"/>
+  <g fill="#FEC50C" transform="translate(40,30)">
+    <path d="M0,0 q10,10 0,20 q10,-10 20,0 q-10,-10 0,-20 q-10,10 -20,0" transform="translate(0,0)"/>
+    <path d="M0,0 q10,10 0,20 q10,-10 20,0 q-10,-10 0,-20 q-10,10 -20,0" transform="translate(0,30)"/>
+    <path d="M0,0 q10,10 0,20 q10,-10 20,0 q-10,-10 0,-20 q-10,10 -20,0" transform="translate(0,60)"/>
+    <path d="M0,0 q10,10 0,20 q10,-10 20,0 q-10,-10 0,-20 q-10,10 -20,0" transform="translate(0,90)"/>
+    <path d="M0,0 q10,10 0,20 q10,-10 20,0 q-10,-10 0,-20 q-10,10 -20,0" transform="translate(0,120)"/>
+    <path d="M0,0 q10,10 0,20 q10,-10 20,0 q-10,-10 0,-20 q-10,10 -20,0" transform="translate(0,150)"/>
+    <path d="M0,0 q10,10 0,20 q10,-10 20,0 q-10,-10 0,-20 q-10,10 -20,0" transform="translate(0,180)"/>
+    <path d="M0,0 q10,10 0,20 q10,-10 20,0 q-10,-10 0,-20 q-10,10 -20,0" transform="translate(0,210)"/>
+  </g>
+</svg>

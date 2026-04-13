@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "locale:validate": "npx tsx src/locale/validate.ts"
   },
   "dependencies": {
     "zod": "^3.23.0"

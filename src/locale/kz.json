@@ -1,0 +1,20 @@
+{
+	"meta.title": "FODMAP тағамдар нұсқаулығы",
+	"meta.description": "Ас қорыту денсаулығына арналған төмен және жоғары FODMAP тағамдарының толық тізімі",
+	"header.title": "FODMAP тағамдар нұсқаулығы",
+	"theme.lightMode": "Ашық режимге ауысу",
+	"theme.darkMode": "Қараңғы режимге ауысу",
+	"attribution.label": "Деректер көзі туралы ақпарат",
+	"attribution.text": "FODMAP деректері алынған көз:",
+	"attribution.thanks": "Толық ақпарат үшін рахмет!",
+	"search.placeholder": "Тағамдарды іздеу...",
+	"tabs.low": "Төмен FODMAP",
+	"tabs.high": "Жоғары FODMAP",
+	"search.noResults": "«{query}» сұрауы бойынша тағамдар табылмады",
+	"search.lowMatches": "Төмен FODMAP сәйкестіктері",
+	"search.highMatches": "Жоғары FODMAP сәйкестіктері",
+	"search.noLowMatches": "Төмен FODMAP бойынша сәйкестік жоқ",
+	"search.noHighMatches": "Жоғары FODMAP бойынша сәйкестік жоқ",
+	"items.count": "{count} тағам",
+	"locale.label": "Тілді өзгерту"
+}

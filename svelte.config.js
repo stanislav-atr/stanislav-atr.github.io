@@ -12,6 +12,9 @@ const config = {
 		}),
 		prerender: {
 			entries: ['*']
+		},
+		alias: {
+			$assets: 'src/assets'
 		}
 	}
 };

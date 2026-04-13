@@ -2,6 +2,8 @@
 	import { lowFodmap, highFodmap } from '$lib/data';
 	import type { FoodItem, FodmapData } from '$lib/schema/fodmap';
 	import { browser } from '$app/environment';
+	import { locale, t } from '$lib/i18n';
+	import LocaleToggle from '$lib/components/LocaleToggle.svelte';
 
 	let activeTab: 'low' | 'high' = $state('low');
 	let searchQuery = $state('');
@@ -24,6 +26,20 @@
 		if (browser) {
 			document.documentElement.classList.toggle('dark', darkMode);
 			localStorage.setItem('darkMode', String(darkMode));
+		}
+	});
+
+	// Initialize locale from localStorage
+	$effect(() => {
+		if (browser) {
+			locale.init();
+		}
+	});
+
+	// Update HTML lang attribute when locale changes
+	$effect(() => {
+		if (browser) {
+			document.documentElement.lang = $locale;
 		}
 	});
 
@@ -86,19 +102,22 @@
 </script>
 
 <svelte:head>
-	<title>FODMAP Foods Guide</title>
-	<meta name="description" content="A comprehensive list of low and high FODMAP foods for digestive health" />
+	<title>{$t('meta.title')}</title>
+	<meta name="description" content={$t('meta.description')} />
 </svelte:head>
 
 <main class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 transition-colors duration-300">
 	<header class="bg-white dark:bg-slate-800 shadow-sm dark:shadow-slate-700/50 sticky top-0 z-10 transition-colors duration-300">
 		<div class="container mx-auto px-4 py-6">
 			<div class="flex justify-end mb-2 gap-2">
+				<!-- Locale toggle -->
+				<LocaleToggle />
+
 				<!-- Dark mode toggle -->
 				<button
 					onclick={toggleDarkMode}
 					class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors duration-200"
-					aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+					aria-label={darkMode ? $t('theme.lightMode') : $t('theme.darkMode')}
 				>
 					{#if darkMode}
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
@@ -120,7 +139,7 @@
 				>
 					<button
 						class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors duration-200"
-						aria-label="Data source attribution"
+						aria-label={$t('attribution.label')}
 						aria-expanded={showAttribution}
 					>
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-600 dark:text-slate-300" viewBox="0 0 20 20" fill="currentColor">
@@ -128,6 +147,8 @@
 						</svg>
 					</button>
 					{#if showAttribution}
+						<!-- Invisible bridge to prevent gap hover issues -->
+						<div class="absolute right-0 top-full h-2 w-full"></div>
 						<div class="absolute right-0 top-full mt-2 w-72 bg-white dark:bg-slate-800 rounded-lg shadow-lg dark:shadow-slate-700/50 border border-slate-200 dark:border-slate-700 p-4 z-20">
 							<div class="flex items-start gap-3">
 								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
@@ -135,7 +156,7 @@
 								</svg>
 								<div>
 									<p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-										FODMAP data sourced from
+										{$t('attribution.text')}
 										<a 
 											href="https://www.ibsdiets.org/fodmap-diet/fodmap-food-list/" 
 											target="_blank" 
@@ -144,7 +165,7 @@
 										>IBS Diets</a>.
 									</p>
 									<p class="text-xs text-slate-500 dark:text-slate-400 mt-2">
-										Thank you for the comprehensive resource!
+										{$t('attribution.thanks')}
 									</p>
 								</div>
 							</div>
@@ -153,12 +174,12 @@
 				</div>
 			</div>
 			<h1 class="text-3xl font-bold text-slate-800 dark:text-slate-100 text-center mb-4 transition-colors duration-300">
-				FODMAP Foods Guide
+				{$t('header.title')}
 			</h1>
 			<div class="flex justify-center mb-4">
 				<input
 					type="search"
-					placeholder="Search foods..."
+					placeholder={$t('search.placeholder')}
 					bind:value={searchQuery}
 					class="w-full max-w-md px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-400 focus:border-slate-400 dark:focus:border-slate-500 focus:ring-2 focus:ring-slate-200 dark:focus:ring-slate-600 focus:outline-none transition-all"
 				/>
@@ -170,7 +191,7 @@
 						? 'bg-emerald-600 text-white shadow-lg shadow-emerald-200 dark:shadow-emerald-900/50' 
 						: 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'}"
 				>
-					Low FODMAP
+					{$t('tabs.low')}
 				</button>
 				<button
 					onclick={() => activeTab = 'high'}
@@ -178,7 +199,7 @@
 						? 'bg-amber-600 text-white shadow-lg shadow-amber-200 dark:shadow-amber-900/50' 
 						: 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'}"
 				>
-					High FODMAP
+					{$t('tabs.high')}
 				</button>
 			</div>
 		</div>
@@ -188,21 +209,21 @@
 		{#if isSearchActive}
 			{#if filteredLow.categories.length === 0 && filteredHigh.categories.length === 0}
 				<div class="text-center py-12">
-					<p class="text-slate-500 dark:text-slate-400 text-lg">No foods found matching "{searchQuery}"</p>
+					<p class="text-slate-500 dark:text-slate-400 text-lg">{$t('search.noResults', { query: searchQuery })}</p>
 				</div>
 			{:else}
 				<div class="grid md:grid-cols-2 gap-8">
 					<div>
 						<h2 class="text-2xl font-semibold text-emerald-700 dark:text-emerald-400 mb-4">
-							Low FODMAP Matches
+							{$t('search.lowMatches')}
 							{#if filteredLow.categories.length > 0}
 								<span class="text-base font-normal text-slate-500 dark:text-slate-400">
-									({filteredLow.categories.reduce((acc, cat) => acc + cat.foods.length, 0)} items)
+									({$t('items.count', { count: filteredLow.categories.reduce((acc, cat) => acc + cat.foods.length, 0) })})
 								</span>
 							{/if}
 						</h2>
 						{#if filteredLow.categories.length === 0}
-							<p class="text-slate-400 dark:text-slate-500 italic">No matches in Low FODMAP</p>
+							<p class="text-slate-400 dark:text-slate-500 italic">{$t('search.noLowMatches')}</p>
 						{:else}
 							<div class="space-y-4">
 								{#each filteredLow.categories as category}
@@ -222,15 +243,15 @@
 					</div>
 					<div>
 						<h2 class="text-2xl font-semibold text-amber-700 dark:text-amber-400 mb-4">
-							High FODMAP Matches
+							{$t('search.highMatches')}
 							{#if filteredHigh.categories.length > 0}
 								<span class="text-base font-normal text-slate-500 dark:text-slate-400">
-									({filteredHigh.categories.reduce((acc, cat) => acc + cat.foods.length, 0)} items)
+									({$t('items.count', { count: filteredHigh.categories.reduce((acc, cat) => acc + cat.foods.length, 0) })})
 								</span>
 							{/if}
 						</h2>
 						{#if filteredHigh.categories.length === 0}
-							<p class="text-slate-400 dark:text-slate-500 italic">No matches in High FODMAP</p>
+							<p class="text-slate-400 dark:text-slate-500 italic">{$t('search.noHighMatches')}</p>
 						{:else}
 							<div class="space-y-4">
 								{#each filteredHigh.categories as category}

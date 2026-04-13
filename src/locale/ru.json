@@ -1,0 +1,20 @@
+{
+	"meta.title": "Справочник FODMAP продуктов",
+	"meta.description": "Полный список продуктов с низким и высоким содержанием FODMAP для здоровья пищеварения",
+	"header.title": "Справочник FODMAP продуктов",
+	"theme.lightMode": "Переключить на светлую тему",
+	"theme.darkMode": "Переключить на тёмную тему",
+	"attribution.label": "Источник данных",
+	"attribution.text": "Данные FODMAP получены из",
+	"attribution.thanks": "Спасибо за исчерпывающий ресурс!",
+	"search.placeholder": "Поиск продуктов...",
+	"tabs.low": "Низкий FODMAP",
+	"tabs.high": "Высокий FODMAP",
+	"search.noResults": "Продукты по запросу «{query}» не найдены",
+	"search.lowMatches": "Совпадения с низким FODMAP",
+	"search.highMatches": "Совпадения с высоким FODMAP",
+	"search.noLowMatches": "Нет совпадений в низком FODMAP",
+	"search.noHighMatches": "Нет совпадений в высоком FODMAP",
+	"items.count": "{count} продуктов",
+	"locale.label": "Сменить язык"
+}

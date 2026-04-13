@@ -1,0 +1,20 @@
+{
+	"meta.title": "FODMAP Foods Guide",
+	"meta.description": "A comprehensive list of low and high FODMAP foods for digestive health",
+	"header.title": "FODMAP Foods Guide",
+	"theme.lightMode": "Switch to light mode",
+	"theme.darkMode": "Switch to dark mode",
+	"attribution.label": "Data source attribution",
+	"attribution.text": "FODMAP data sourced from",
+	"attribution.thanks": "Thank you for the comprehensive resource!",
+	"search.placeholder": "Search foods...",
+	"tabs.low": "Low FODMAP",
+	"tabs.high": "High FODMAP",
+	"search.noResults": "No foods found matching \"{query}\"",
+	"search.lowMatches": "Low FODMAP Matches",
+	"search.highMatches": "High FODMAP Matches",
+	"search.noLowMatches": "No matches in Low FODMAP",
+	"search.noHighMatches": "No matches in High FODMAP",
+	"items.count": "{count} items",
+	"locale.label": "Change language"
+}
